@@ -21,5 +21,6 @@ env/
 *.swo
 *~
 .DS_Store
+docs/
 src/logs/*.log
 *.log
