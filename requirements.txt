@@ -1,0 +1,6 @@
+fastmcp
+pyyaml
+qbittorrent-api
+transmission-rpc
+anyio
+httpx

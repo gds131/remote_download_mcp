@@ -1,0 +1,27 @@
+downloaders:
+  # qBittorrent 实例1
+  qb1: 
+    type: qbittorrent
+    url: http://10.10.10.1:8081
+    username: test
+    password: test
+    save_path: /downloads
+    
+  # qBittorrent 实例2（可能是不同服务器）
+  qb2:
+    type: qbittorrent
+    url: http://10.10.10.2:8080/
+    username: test
+    password: test
+    save_path: /downloads
+    
+  # Transmission 实例1
+  tr1:
+    type: transmission
+    url: http://10.10.10.3:9091
+    username: test
+    password: test
+    save_path: /downloads
+
+# 可选：默认下载器
+default_downloader: qb1

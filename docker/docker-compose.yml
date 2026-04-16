@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mcp-download:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    # image: remote-download-mcp:latest
+    ports:
+      - "${MCP_PORT:-8000}:8000"
+    volumes:
+      # 外挂配置文件
+      - ../config:/app/config:ro
+    environment:
+
+    restart: unless-stopped
